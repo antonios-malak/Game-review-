@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games review</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-dark" data-bs-theme="dark">
+    <header>
+      <img src="imgs/wraper.png" alt="warrior" class="w-100" />
+    </header>
+    <nav class="navbar navbar-expand-lg mx-auto rounded-4 sticky-top z-3">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3" href="#"
+          ><img src="imgs/logo-sm.png" alt="logo" />GAME REVIEWS</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                id="mmorpg"
+                aria-current="page"
+                href="#"
+                >MMORPG</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="shooter" href="#">SHOOTER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="sailing" href="#">SAILING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="permadeath" href="#">PERMADEATH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="superhero" href="#">SUPERHERO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pixel" href="#">PIXEL</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container">
+      <div class="loading d-none">
+        <span class="loader"></span>
+      </div>
+      <div class="row" id="card-container"></div>
+      <div id="modal-container"></div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
