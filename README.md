@@ -25,6 +25,10 @@ The project uses **HTML**, **CSS**, **Bootstrap**, and **JavaScript** to provide
 
 ---
 
+## Demo Link 
+
+https://antonios-malak.github.io/Game-review-/
+
 
 ## Installation and Setup
 
