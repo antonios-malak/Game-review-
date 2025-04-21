@@ -32,7 +32,7 @@ function loadCards(apiData){
     apiData.forEach(game =>{
     var card = ""
     card += `
-     <div class="col col-md-6 col-lg-4 col-xl-3 g-4 d-flex" >
+     <div class=" col-sm-12 col-md-6 col-lg-4 col-xl-3 g-4 d-flex" >
         <div class="card " id="${game.id}" data-bs-toggle="modal" data-bs-target="#gameModal" onclick="getDetails(this.id)">
             <img src="${game.thumbnail}" class="card-img-top p-3" alt="...">
             <div class="card-body position-relative py-0 ">
@@ -79,11 +79,11 @@ function displayDetails(details){
                   <h5 class="modal-title" id="gameModalLabel">Game Details</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body d-flex justify-content-between align-items-center" id="modal-content">
-                  <div class="image">
+                <div class="modal-body d-flex flex-column flex-lg-row gap-4 justify-content-around align-items-center" id="modal-content">
+                  <div class="image w-100">
                     <img class="w-100" src="${details.thumbnail}">
                   </div>
-                  <div class=" w-50">
+                  <div class=" w-100">
                     <h3>Title:${details.title}</h3>
                     <h5>Category:  <span class="bg-primary px-1 rounded-3">${details.genre}</span></h5>
                     <h5>Platform:  <span class="bg-primary px-1 rounded-3">${details.platform}</span></h5>
